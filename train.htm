@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Booking</title>
+<link rel="stylesheet" href="train.css">
+</head>
+<body>
+
+<header>
+🚆 Book Your Train
+</header>
+
+<div class="container">
+    <h2>Train Ticket Booking</h2>
+    <form id="bookingForm">
+        <div>
+            <label for="from">From</label>
+            <input type="text" id="from" placeholder="Departure station" required>
+        </div>
+        <div>
+            <label for="to">To</label>
+            <input type="text" id="to" placeholder="Destination station" required>
+        </div>
+        <div>
+            <label for="date">Date of Journey</label>
+            <input type="date" id="date" required>
+        </div>
+        <div>
+            <label for="class">Class</label>
+            <select id="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select>
+        </div>
+        <button type="submit">Book Ticket</button>
+    </form>
+    <div class="success-message" id="successMessage">
+        🎉 Your train ticket has been booked successfully!
+    </div>
+</div>
+
+<script src="train.js"></script>
+
+</body>
+</html>
